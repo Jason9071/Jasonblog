@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 import './index.css';
 import App from './components/App/App';
 import reportWebVitals from './reportWebVitals';
+import j from './images/j.jpeg'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -12,8 +13,11 @@ ReactDOM.render(
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
       <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"></link>
       <style>{`body { background-color : black;`}</style>
-
-
+      <script src="/__/firebase/8.8.0/firebase-app.js"></script>
+      <script src="/__/firebase/8.8.0/firebase-analytics.js"></script>
+      <script src="/__/firebase/init.js"></script>
+      <title>{ `Jason's blog` }</title>
+      <link rel = "icon" href = {j} type = "image/x-icon"></link>
     </Helmet>
     <App />
   </React.StrictMode>,

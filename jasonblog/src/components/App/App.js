@@ -9,7 +9,8 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 
 import About from '../About/About'
 import Home from '../Home/Home'
-import gif from '../../images/background.gif'
+import Blog from '../Blog/Blog'
+import gif from '../../images/background2.gif'
 //import Topics from '../Topics/Topics'
 
 const useStyle = () => {
@@ -40,7 +41,9 @@ const App = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse >
             <Nav className="me-auto">
-              <Nav.Link style={appStyle.pixelFont} href="/about">About Me</Nav.Link>
+              <Nav.Link style={appStyle.pixelFont} href="/about">About</Nav.Link>
+              <Nav.Link style={appStyle.pixelFont} href="/blog">Blog</Nav.Link>
+              <Nav.Link style={appStyle.pixelFont} href="/contact">Contact</Nav.Link>
             </Nav>
 
           </Navbar.Collapse>
@@ -50,6 +53,12 @@ const App = () => {
       <Switch>
         <Route path="/about">
           <About />
+        </Route>
+        <Route path="/blog">
+          <Blog />
+        </Route>
+        <Route path="/contact">
+          <Contact />
         </Route>
         <Route path="/">
           <Home />

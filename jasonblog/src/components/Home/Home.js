@@ -7,15 +7,16 @@ const useStyle = () => {
             "justify-content" : "center",
         },
         pixelButton: {
-            marginTop : "20vw",
-            "background-color" : "white",
+            marginTop : "20px",
             "font-family" : "VT323",
             "font-size" : "20px",
             "color" : "green",
             "height" : "30px",
             "width" : "10%",
             "border-radius" : "5px", 
-            "text-align": "center"
+            "text-align": "center",
+            "opacity":1,
+            "transition": "width 0.5s, height 0.5s, opacity 0.5s 0.5s"
         }
     }
 }
